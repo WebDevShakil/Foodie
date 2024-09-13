@@ -1,0 +1,565 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sintony", sans-serif;
+}
+body{
+    background-color: #ffff;
+}
+.pd-130{
+    padding:0  130px;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3fcf7;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    
+}
+.logo h1{
+    color: #06c167;
+    font-family: "Inter", sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.nav-container ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-container ul li {
+    position: relative;
+    margin-top: 10px;
+}
+
+.nav-container li a {
+    text-decoration: none;
+    color: #4b4d4e;
+    font-size: 16px;
+    padding: 15px;
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+}
+#active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: #06c167;
+    height: 6px;
+    width: 6px;
+    opacity: 1;
+    transition: opacity 0.3s;}
+.nav-container li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: #06c167;
+    height: 6px;
+    width: 6px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.nav-container li a:hover::after, .nav-container li a.active::after {
+    opacity: 1;
+}
+.nav-container li a:hover{
+    color: #06c167;
+}
+#active{
+    color: #06c167;
+}
+
+header{
+    background-color: #f3fcf7;
+    height: 635px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header .left-hero-side{
+    padding: 100px 0;
+}
+.left-hero-side h1{
+    font-size: 75px;
+    color:black ;
+    
+}
+.left-hero-side p{
+    font-size: 20px;
+    color: rgba(29, 29, 31, 0.75);;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.left-hero-side button{
+    background-color: #06c167;
+    color: #ffff;
+    border: none;
+    padding: 25px 40px;
+    font-size: 18px;
+}
+.left-hero-side button:hover{
+    background-color: #0bd875;
+}
+.right-hero-side{
+    padding: 100px 0;
+}
+
+.review-top img{
+    position: absolute;
+    top: 360px;
+    right: 90px;
+}
+.ratting-top{
+    position: absolute;
+    top:420px;
+    right: 430px;
+}
+.hero-logo{
+    position: absolute;
+    left: 130px;
+    top: 670px; ;
+    z-index: -2;
+}
+.hero-logo img{
+    margin: 20px;
+    height: 40px;
+}
+.middle-section{
+    margin: 200px 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid rgba(112, 112, 112, 0.3);
+    border-bottom: 2px solid rgba(112, 112, 112, 0.3);
+    align-items: center;
+    
+}
+.service img{
+    float: right;
+}
+.service-text {
+    float: right;
+    font-size: 25px;
+    margin-left: auto;
+}
+.service{
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    
+}
+.text-mini{
+    font-size: 16px;
+}
+.benefit-section{
+    margin-left:  20%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+    align-items: center;
+
+}
+ .benefit-img{
+    padding-top:0;
+    padding-left:48 ;
+    padding-right:48 ;
+    padding-bottom: 95px;
+    background-color: rgba(243, 250, 251, 1);;
+    height: 610px;
+    width: 560px;
+    display: flex;
+    justify-content: center;
+    
+}
+.benefit-section img{
+    width: 445px;
+    height: 513px;
+    
+}
+.benefit-text{
+    margin-left: 40px;
+    width: 444px;
+}
+.benefit-text h2 {
+    font-size: 60px;
+    margin-bottom: 4cqi;
+}
+.benefit-list ul{
+    line-height: 1.6em;
+}
+.benefit-list ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    
+}
+.benefit-list ul li::before{
+    content: "";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #06c167;
+}
+.star-section{
+    margin: 0 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.star-text{
+    margin-left: 40px;
+    width: 444px;
+}
+.star-text h2 {
+    font-size: 60px;
+    margin-bottom: 4cqi;
+}
+.star-showcase{
+    display: flex;
+}
+.showcase{
+    margin: 20px;
+}
+.showcase h1{
+    color: #0bd875;
+    line-height: 1.2em;
+}
+.showcase p {
+    margin: 10px 0;
+}
+.feature-section{
+ text-align: center;
+ margin: 200px 100px;
+
+    
+}
+.feature-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin:  0 auto;
+    width: fit-content;
+    background-color: #f3fcf7;
+    margin: 100px auto;
+   
+    
+}
+.feature{
+    display: flex;
+    
+    
+}
+.feature img{
+    height: 260px;
+    object-fit: cover;
+}
+.feature div{
+    border: 2px solid #06c167;
+    padding: 30px 20px;
+    width: 260px;
+}
+.feature div p {
+    padding: 20px 0px;
+}
+.feature button{
+    background-color: #06c167;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+}
+.feature h3{
+    font-size: 30px;
+    ;
+}
+.product-section{
+    margin: 0 130px;
+}
+.product-heading{
+    margin-bottom: 30px;
+    margin-left: 200px;
+}
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+
+}
+.product-heading p{
+    margin-bottom: 10px;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+    border: 3px solid #06c167;
+    margin: 20px;
+    padding: 20px 40px;
+    align-items: center;
+    
+}
+.product:hover{
+    border:3px solid #2be78c ;
+}
+.product img{
+    margin-bottom: 20px;
+}
+.product button{
+    background-color: transparent;
+    color: #06c167;
+    border: 2px solid #06c167;
+    padding: 20px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.prev-price {
+    text-decoration: line-through;
+    padding-right: 10px;
+    font-size: 20px ;
+    font-weight:500;
+}
+.product p{
+    margin-bottom: 20px;
+}
+.current-price{
+    color: #06c167;
+    font-size: 20px ;
+    font-weight:600;
+}
+.product button:hover{
+    background-color: #06c167;
+    color: #ffff;
+}
+.middle-section-foot{
+    padding: 0 150px;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+.middle-section-foot img{
+    margin: auto;
+    width: 70%;
+}
+.middle-section-foot .middle-button{
+    position: absolute;
+    
+    transform: translateY(50%);
+    text-align: center;
+    
+}
+.middle-button h1{
+    color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+    font-size: 55px;
+}
+.middle-button button{
+    font-size: 20px;
+    padding: 20px 30px;
+    background-color: #06c167;
+    color: white;
+    border: none;
+}
+.middle-button i{
+    margin-left: 5px;
+}
+.footer-section{
+    display: flex;
+   padding: 50px 130px;
+    background-color: #ffffff;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+.left-side{
+    flex: 1;
+    margin-right: 30px;
+}
+.right-side{
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-side h3{
+    font-size: 30px;
+    color: #06c167;
+    margin-bottom: 30px;
+}
+.right-side h3{
+    font-size: 20px;
+    margin: 30px 0;
+    cursor: pointer;
+}
+.right-side p{
+    font-size: 16px;
+    margin-bottom:10px ;
+    cursor: pointer;
+}
+.about{
+    flex: 1;
+}
+.company{
+    flex: 1;
+}
+.touch{
+    flex: 2;
+}
+.subscribe{
+    display: flex;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.touch input{
+    margin-top: 30px;
+    width: 250px;
+    height: 43px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid;
+    background-color: #fff;
+   
+}
+.touch button{
+    background-color: #06c167;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    border-radius: 2px;
+    margin-left: 5px;
+    margin-top: 30px;
+    color:white;
+}
+button:hover{
+    background-color: #0bd875;
+}
+.nav-menu{
+    display: none;
+}
+@media only screen and (max-width: 375px) {
+    nav{
+        display: none;
+    } 
+    .pd-130{
+        padding: 0 25px;
+    } 
+    .nav-menu{display: inline-block;
+        margin-top: 25px;
+    } 
+    .left-hero-side{
+        text-align: center;
+    }
+    .left-hero-side h1{
+        font-size: 51px;
+    }
+    .left-hero-side p{
+        font-size: 14px;
+    }
+    header{
+        display: block;
+    }
+    .right-hero-side{
+        padding:0;
+        width: 320px;
+        height: 470px;
+    }
+    .right-img{
+        height: 100%;
+        width: 100%;
+    }
+    header .left-hero-side{
+        padding:  100px 0 20px 0;
+    }
+    .review-top img{
+        position: absolute;
+        top: 925px;
+        left: 73px;
+    }
+    .ratting-top{
+        position: absolute;
+        top:850px;
+        left: 73px;
+    }
+    .hero-logo{
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .hero-logo img{
+        margin: 10px;
+        height: 28px;
+        width: 124px;
+    }
+    .middle-section{
+        margin: 600px 25px 100px 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 2px solid rgba(112, 112, 112, 0.3);
+        border-bottom: 2px solid rgba(112, 112, 112, 0.3);
+        align-items: center;
+        
+    }
+    .service{
+        height: 137px;
+        width: 117px;
+        display: block;
+        
+    }
+    .service img{
+        height: 70px;
+        width: 70px;
+        display: block;
+    }
+    .service-text {
+        font-size: 18px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .footer-section{
+        display: flex;
+       padding: 50px 130px;
+       flex-direction: column;
+        background-color: #ffffff;
+        justify-content: space-between;
+        margin-top: 200px;
+    }
+    .right-side{
+        flex: 3;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .benefit-section{
+        margin-left:  20px;
+        margin-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 200px;
+        align-items: center;
+    
+    }
+    
+}
